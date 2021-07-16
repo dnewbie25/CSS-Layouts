@@ -1,7 +1,7 @@
 /* General styles and fonts */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;500;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Encode Sans SC', sans-serif;
@@ -10,34 +10,42 @@
 
 
 body {
-    display: grid;
-    grid-template-rows: 60px 1fr 40px;
-    min-height: 100vh;
+    background-image: url("../img/GridBG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* Navigation bar */
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+}
 
-#navbar{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
+#navbar {
     padding: 10px;
+    width: 100%;
+    position: sticky;
+    display: inline-flex;
+    justify-content: space-between;
     background-color: #212529;
 }
 
-#navbar h1{
+#navbar h1 {
     color: #E6E7E7;
     font-size: 30px;
     align-self: flex-end;
     text-transform: uppercase;
 }
 
-#navbar ul{
+#navbar ul {
     list-style: none;
     align-self: center;
 }
 
-#navbar ul > li{
+#navbar ul>li {
     float: left;
     font-size: 20px;
     margin-right: 10px;
@@ -45,48 +53,49 @@ body {
     text-transform: uppercase;
 }
 
-#navbar a{
+#navbar a {
     color: #7D7F81;
     font-weight: 500;
     text-decoration: none;
 }
 
 #navbar a:hover,
-#navbar a:active{
+#navbar a:active {
     color: white;
 }
 
 /* Main section */
 
-#section{
-    background-image: url("../img/GridBG.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+#section {
+    width: 100%;
+
 }
 
-#homeText{
-        font-weight: bold;
-        font-size: 50px;
-        text-transform: uppercase;
-        color: rgb(197, 253, 10);
-        text-align: center;
-        margin-top: 40vh;
-        
+#homeText {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(197, 253, 10);
+    position: absolute;
+    top: 50%;
 }
 
-h2{
+h2 {
     text-shadow: 2px 5px 2px rgb(169, 170, 165);
 }
 
 /* Footer style and positioning */
 
-#footer{
+#footer {
+    bottom: 0px;
+    width: 100%;
     padding: 10px;
     background-color: #212529;
     color: #7D7F81;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    grid-row: 3/4;
+    position: fixed;
 }
