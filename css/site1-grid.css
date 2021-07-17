@@ -9,12 +9,12 @@
 }
 
 
-body {
+/* body {
     background-image: url("../img/GridBG.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 /* Navigation bar */
 header {
@@ -64,11 +64,11 @@ header {
     cursor: pointer;
 }
 
-#navbar .dropdown{
+#navbar .dropdown {
     position: relative;
 }
 
-#navbar .dropdown-content{
+#navbar .dropdown-content {
     display: none;
     position: absolute;
     padding: 5px;
@@ -81,19 +81,20 @@ header {
     text-align: left;
 }
 
-#navbar .home:hover{
+#navbar .home:hover {
     color: white;
 }
 
-#navbar span:hover{
+#navbar span:hover {
     color: white;
 }
-#navbar .dropdown:hover .dropdown-content{
+
+#navbar .dropdown:hover .dropdown-content {
     display: block;
     background-color: aliceblue;
 }
 
-#navbar .dropdown:hover .dropdown-content a{
+#navbar .dropdown:hover .dropdown-content a {
     padding: 4px;
     display: block;
     margin: 5px 0;
@@ -109,23 +110,26 @@ header {
 /* Main section */
 
 #section {
-    width: 100%;
+    margin: 100px 500px 100px 500px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col {
+    padding: 10px;
+    height: 700px;
 
 }
 
-#homeText {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    text-transform: uppercase;
-    color: rgb(197, 253, 10);
-    position: absolute;
-    top: 50%;
+.col-1 {
+    background-color: #212529;
+    color: white;
 }
 
-h2 {
-    text-shadow: 2px 5px 2px rgb(169, 170, 165);
+.col-2 {
+    background-color: #7D7F81;
 }
 
 /* Footer style and positioning */

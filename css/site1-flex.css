@@ -9,17 +9,18 @@
 }
 
 
-body {
+/* body {
     background-image: url("../img/GridBG.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 /* Navigation bar */
 header {
     top: 0;
     width: 100%;
+    display: block;
     position: fixed;
     height: 60px;
 }
@@ -109,24 +110,32 @@ header {
 /* Main section */
 
 #section {
-    width: 100%;
-
+    margin: 100px 500px 100px 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1;
+    justify-content: space-between;
 }
 
-#homeText {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    text-transform: uppercase;
-    color: rgb(197, 253, 10);
-    position: absolute;
-    top: 50%;
+.col {
+    width: 100%; 
+    height: 700px;
+    padding: 10px;
+    flex-grow: 1;
 }
 
-h2 {
-    text-shadow: 2px 5px 2px rgb(169, 170, 165);
+.col-1{
+    margin-right: 10px;
+    background-color: #212529;
+    color: white;
 }
+
+.col-2{
+    margin-left: 10px;
+    background-color: #7D7F81;
+}
+
 
 /* Footer style and positioning */
 
@@ -140,4 +149,5 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     position: fixed;
+    display: block;
 }
