@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/site3-flex.css">
+    <title>CSS Layouts</title>
+</head>
+
+<body>
+    <!-- Navigation bar starts -->
+    <header>
+        <nav id="navbar">
+            <h1>CSS Layouts</h1>
+            <ul class="layouts-pages">
+                <li class="navbar-item">
+                    <a href="index.html" class="home">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout One</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout1-flex.html">Flexbox One</a>
+                            </li>
+                            <li>
+                                <a href="layout1-grid.html">Grid One</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Two</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout2-flex.html">Flexbox Two</a>
+                            </li>
+                            <li>
+                                <a href="layout2-grid.html">Grid Two</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Three</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout3-flex.html">Flexbox Three</a>
+                            </li>
+                            <li>
+                                <a href="layout3-grid.html">Grid Three</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Four</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout4-flex.html">Flexbox Four</a>
+                            </li>
+                            <li>
+                                <a href="layout4-grid.html">Grid Four</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Five</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout5-flex.html">Flexbox Five</a>
+                            </li>
+                            <li>
+                                <a href="layout5-grid.html">Grid Five</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Six</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout6-flex.html">Flexbox Six</a>
+                            </li>
+                            <li>
+                                <a href="layout6-grid.html">Grid Six</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Seven</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout7-flex.html">Flexbox Seven</a>
+                            </li>
+                            <li>
+                                <a href="layout7-grid.html">Grid Seven</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Eight</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout8-flex.html">Flexbox Eight</a>
+                            </li>
+                            <li>
+                                <a href="layout8-grid.html">Grid Eight</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <div class="dropdown">
+                        <span>Layout Nine</span>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="layout9-flex.html">Flexbox Nine</a>
+                            </li>
+                            <li>
+                                <a href="layout9-grid.html">Grid Nine</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navigation bar ends -->
+
+    <!-- Main content starts -->
+    <section id="section">
+        <nav class="layout3-change">
+            <input type="radio" id="layout3A" name="layout">
+            <label for="layout3A" id="label3A">Grid 3A</label>
+
+            <input type="radio" id="layout3B" name="layout">
+            <label for="layout3B" id="label3B">Grid 3B</label>
+        </nav>
+
+
+        <!-- lauoyt 3a -->
+        <div class="container1" id="container1">
+            <div class="col col1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus velit
+                pariatur animi et officia, sit, eos, tenetur temporibus dignissimos culpa hic quo esse perspiciatis
+                dolorum! Quisquam accusantium dolorum illo?</div>
+            <div class="col col2">
+                <div class="subcol subcol1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat
+                    nisi temporibus excepturi dolores illum unde!</div>
+
+                <div class="subcol subcol2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto possimus autem deserunt voluptates
+                    tempore quibusdam illum numquam vel fugiat tempora tenetur voluptas
+                    <svg height="10px" id="line"
+                        style="/*! text-align: center; *//*! margin: 0 auto; *//*! bottom: 100px; */position: absolute;left: 2.5%;bottom: 50px;"
+                        width="95%">
+                        <line x1="0" y1="0" x2="300" y2="0" style="stroke:rgb(236, 234, 234);stroke-width:5"></line>
+                    </svg>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- layout 3b -->
+        <div class="container2" id="container2">
+
+            <div class="col col1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos corporis, qui dolores
+                cum porro ducimus, ut eos quam animi inventore assumenda labore, quod laudantium officia voluptates
+                fugit cumque deserunt nesciunt.</div>
+            <div class="col col2">
+                <form class="subcol subcol1">
+                    <input type="search" name="" id="searchbar" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="subcol subcol2">
+                    <h3>More Articles</h3>
+                    <a href="#">Article 1</a><a href="#">Article 2</a><a href="#">Article 3</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Main content ends -->
+
+    <!-- Footer starts -->
+    <footer id="footer">
+        CSS Layout Practice
+    </footer>
+    <!-- Footer ends -->
+    <script>
+        let layoutA = document.getElementById("layout3A");
+        let layoutB = document.getElementById("layout3B");
+        let container1 = document.getElementById("container1");
+        let container2 = document.getElementById("container2");
+
+        container1.style.display = "none";
+        container2.style.display = "none";
+
+
+        layoutA.addEventListener('change', e => {
+            container1.style.display = "flex";
+            container2.style.display = "none";
+        });
+
+        layoutB.addEventListener('change', e => {
+            container1.style.display = "none";
+            container2.style.display = "flex";
+        });
+    </script>
+</body>
+
+</html>
