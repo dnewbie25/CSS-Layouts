@@ -1,0 +1,161 @@
+/* General styles and fonts */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: bold;
+}
+
+
+/* body {
+    background-image: url("../img/GridBG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+/* Navigation bar */
+header {
+    top: 0;
+    width: 100%;
+    display: block;
+    position: fixed;
+    height: 60px;
+}
+
+#navbar {
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #212529;
+}
+
+#navbar h1 {
+    color: #E6E7E7;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#navbar ul {
+    list-style: none;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#navbar ul>li {
+    float: left;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+/* Dropdown menu */
+
+
+#navbar a,
+#navbar span {
+    color: #7D7F81;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar .dropdown{
+    position: relative;
+}
+
+#navbar .dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 5px;
+    z-index: 1;
+}
+
+#navbar .dropdown-content li {
+    width: fit-content;
+    margin-left: 2px;
+    text-align: left;
+}
+
+#navbar .home:hover{
+    color: white;
+}
+
+#navbar span:hover{
+    color: white;
+}
+#navbar .dropdown:hover .dropdown-content{
+    display: block;
+    background-color: aliceblue;
+}
+
+#navbar .dropdown:hover .dropdown-content a{
+    padding: 4px;
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+#navbar a:hover,
+#navbar a:active {
+    color: black;
+}
+
+/* Main section */
+
+#section {
+    margin: 100px 500px 100px 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.col {
+    height: 700px;
+    padding: 10px;
+}
+
+.col-1{
+    margin-right: 10px;
+    background-color: #7D7F81;
+    color: white;
+    flex-grow: 1;
+}
+
+.col-2{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #212529;
+    color: white;
+    flex-grow: 1;
+}
+
+.col-3{
+    margin-left: 10px;
+    background-color: #7D7F81;
+    color: white;
+    flex-grow: 1;
+}
+
+
+/* Footer style and positioning */
+
+#footer {
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: #212529;
+    color: #7D7F81;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    position: fixed;
+    display: block;
+}
