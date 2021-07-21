@@ -146,6 +146,54 @@
 
     <!-- Main content starts -->
     <section id="section">
+        <nav class="layout3-change">
+            <input type="radio" id="layout3A" name="layout">
+            <label for="layout3A" id="label3A">Grid 3A</label>
+
+            <input type="radio" id="layout3B" name="layout">
+            <label for="layout3B" id="label3B">Grid 3B</label>
+        </nav>
+
+
+        <!-- layout 3a -->
+        <div class="container1" id="container1">
+            <div class="col col1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus velit
+                pariatur animi et officia, sit, eos, tenetur temporibus dignissimos culpa hic quo esse perspiciatis
+                dolorum! Quisquam accusantium dolorum illo?</div>
+            <div class="col col2">
+                <div class="subcol subcol1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat
+                    nisi temporibus excepturi dolores illum unde!</div>
+
+                <div class="subcol subcol2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto possimus autem deserunt voluptates
+                    tempore quibusdam illum numquam vel fugiat tempora tenetur voluptas
+                    <svg height="10px" id="line"
+                        style="/*! text-align: center; *//*! margin: 0 auto; *//*! bottom: 100px; */position: absolute;left: 2.5%;bottom: 50px;"
+                        width="95%">
+                        <line x1="0" y1="0" x2="300" y2="0" style="stroke:rgb(236, 234, 234);stroke-width:5"></line>
+                    </svg>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- layout 3b -->
+        <div class="container2" id="container2">
+
+            <div class="col col1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos corporis, qui dolores
+                cum porro ducimus, ut eos quam animi inventore assumenda labore, quod laudantium officia voluptates
+                fugit cumque deserunt nesciunt.</div>
+            <div class="col col2">
+                <form class="subcol subcol1">
+                    <input type="search" name="" id="searchbar" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="subcol subcol2">
+                    <h3>More Articles</h3>
+                    <a href="#">Article 1</a><a href="#">Article 2</a><a href="#">Article 3</a>
+                </div>
+            </div>
+            
+        </div>
     </section>
 
     <!-- Main content ends -->
@@ -155,6 +203,26 @@
         CSS Layout Practice
     </footer>
     <!-- Footer ends -->
+    <script>
+        let layoutA = document.getElementById("layout3A");
+        let layoutB = document.getElementById("layout3B");
+        let container1 = document.getElementById("container1");
+        let container2 = document.getElementById("container2");
+
+        container1.style.display = "none";
+        container2.style.display = "none";
+
+
+        layoutA.addEventListener('change', e => {
+            container1.style.display = "grid";
+            container2.style.display = "none";
+        });
+
+        layoutB.addEventListener('change', e => {
+            container1.style.display = "none";
+            container2.style.display = "grid";
+        });
+    </script>
 </body>
 
 </html>
