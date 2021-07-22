@@ -110,7 +110,7 @@ header {
 /* Main section */
 
 #section {
-    margin: 100px 500px 100px 500px;
+    margin: 100px 1vw 100px 1vw;
     height: calc(100vh - 235px);
     display: flex;
     flex-direction: row;
@@ -124,24 +124,42 @@ header {
 }
 
 .col-1{
-    margin-bottom: 10px;
-    background-color: #7D7F81;
-    color: white;
-    flex-basis: 100%; 
-    flex-grow: 1;
-}
-
-.col-2{
     margin-top: 10px;
     margin-left: 10px;
     background-color: #212529;
     color: white;
+    flex-grow: 1;
     order: 1;
+}
+
+.col-2{
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    background-color: #7D7F81;
+    color: white;
     flex-grow: 1;
 }
 
 .col-3{
     margin-top: 10px;
+    margin-right: 10px;
+    background-color: #7D7F81;
+    color: white;
+    flex-grow: 1;
+}
+
+.col-4{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #7D7F81;
+    color: white;
+    flex-grow: 1;
+}
+
+.col-5{
+    margin-top: 10px;
+    margin-left: 10px;
     margin-right: 10px;
     background-color: #7D7F81;
     color: white;

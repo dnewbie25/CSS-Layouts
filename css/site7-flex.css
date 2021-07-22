@@ -110,7 +110,7 @@ header {
 /* Main section */
 
 #section {
-    margin: 100px 500px 100px 500px;
+    margin: 100px 1vw 100px 1vw;
     height: calc(100vh - 235px);
     display: flex;
     flex-direction: row;

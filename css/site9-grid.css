@@ -20,7 +20,6 @@
 header {
     top: 0;
     width: 100%;
-    display: block;
     position: fixed;
     height: 60px;
 }
@@ -65,11 +64,11 @@ header {
     cursor: pointer;
 }
 
-#navbar .dropdown{
+#navbar .dropdown {
     position: relative;
 }
 
-#navbar .dropdown-content{
+#navbar .dropdown-content {
     display: none;
     position: absolute;
     padding: 5px;
@@ -82,19 +81,20 @@ header {
     text-align: left;
 }
 
-#navbar .home:hover{
+#navbar .home:hover {
     color: white;
 }
 
-#navbar span:hover{
+#navbar span:hover {
     color: white;
 }
-#navbar .dropdown:hover .dropdown-content{
+
+#navbar .dropdown:hover .dropdown-content {
     display: block;
     background-color: aliceblue;
 }
 
-#navbar .dropdown:hover .dropdown-content a{
+#navbar .dropdown:hover .dropdown-content a {
     padding: 4px;
     display: block;
     margin: 5px 0;
@@ -110,44 +110,46 @@ header {
 /* Main section */
 
 #section {
-    margin: 100px 500px 100px 500px;
-    height: calc(100vh - 235px);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: space-between;  */
+    margin: 100px 1vw 100px 1vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 360px 360px;
+    grid-template-columns: repeat(4, auto);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
 }
 
 .col {
-    height: 360px;
     padding: 10px;
+    height: calc(100% - 20px);
 }
 
 .col-1{
-    margin-bottom: 10px;
-    background-color: #7D7F81;
-    color: white;
-    flex-basis: 100%; 
-    flex-grow: 1;
-}
-
-.col-2{
-    margin-top: 10px;
-    margin-left: 10px;
     background-color: #212529;
     color: white;
     order: 1;
-    flex-grow: 1;
+}
+
+.col-2{
+    background-color: #7D7F81;
+    color: white;
+    grid-column: 1/-1;
 }
 
 .col-3{
-    margin-top: 10px;
-    margin-right: 10px;
     background-color: #7D7F81;
     color: white;
-    flex-grow: 1;
 }
 
+.col-4{
+    background-color: #7D7F81;
+    color: white;
+}
+
+.col-5{
+    background-color: #7D7F81;
+    color: white;
+}
 
 /* Footer style and positioning */
 
@@ -161,5 +163,4 @@ header {
     text-transform: uppercase;
     text-align: center;
     position: fixed;
-    display: block;
 }
